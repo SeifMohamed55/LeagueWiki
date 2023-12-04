@@ -1,0 +1,11 @@
+﻿@model Champion
+
+<h1 class="alert alert-danger">Are you sure you want to delete @Model.Name @Html.DisplayNameFor(d=> d.Name)? </h1>
+
+<partial name="_ChampionsData" model="@Model">
+
+    <form method="post" asp-controller="Champions" asp-action="DeleteChampion">
+        <input type="hidden" asp-for="Id">
+        <button type="submit" class="btn btn-danger"><i class="bi bi-trash"></i> Delete</button>
+    </form>
+

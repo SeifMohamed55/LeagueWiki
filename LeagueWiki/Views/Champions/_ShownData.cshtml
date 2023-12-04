@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Champion>
+@{
+    int champNo = 1;
+}
+
+
+<div class="row" style="margin-left:auto">
+    @if (Model.Count() > 0)
+    {
+
+        <table class="table table-striped table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th><div class="text-center">@Html.DisplayNameFor(m => m.Name)</div></th>
+                    <th><div class="text-center">@Html.DisplayNameFor(m => m.Role)</div></th>
+                    <th><div class="text-center">@Html.DisplayNameFor(m => m.Difficulty)</div></th>
+                    <th><div class="text-center">@Html.DisplayNameFor(m => m.Country)</div></th>
+                    <th><div class="text-center">@Html.DisplayNameFor(m => m.AddDate)</div></th>
+                    <th><div class="text-center">@Html.DisplayNameFor(m => m.ImagePath)</div></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var champ in Model)
+                {
+                    <tr>
+                        <td class="text-center align-middle">@champNo</td>
+                        <td class="text-center align-middle">@champ.Name (@champ.Gender)</td>
+                        <td class="text-center align-middle">@champ.Role.Name</td>
+                        <td class="text-center align-middle">@champ.Difficulty</td>
+                        <td class="text-center align-middle">@champ.Country.Name</td>
+                        <td class="text-center align-middle">@champ.AddDate.ToShortDateString()</td>
+                        <td>
+                            <img src="@champ.ImagePath" class="img-thumbnail" style="width:200px;height:200px;display:block;margin-left: auto;margin-right:auto;" />
+                        </td>
+                        <td class="align-middle">
+                            <div class="d-flex justify-content-end">
+                                <a class="btn btn-outline-success m-2" asp-controller="Champions" asp-action="GetDetailsView" asp-route-id="@champ.Id"><i class="bi bi-list-task"></i> Details</a>
+                                <a class="btn btn-outline-warning m-2" asp-controller="Champions" asp-action="GetEditView" asp-route-id="@champ.Id"><i class="bi bi-pencil-square"></i> Edit</a>
+                                <a class="btn btn-outline-danger m-2" asp-controller="Champions" asp-action="GetDeleteView" asp-route-id="@champ.Id"><i class="bi bi-trash"></i> Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                    champNo++;
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <h1 class="alert alert-danger text-center">No Champions to Show!</h1>
+
+    }
+</div>

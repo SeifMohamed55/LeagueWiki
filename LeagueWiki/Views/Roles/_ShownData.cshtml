@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Role>
+@{
+    int roleNumber = 1;
+}
+<div class="row" style="margin-left:auto">
+    @if (Model.Count() > 0)
+    {
+        @foreach (var role in Model)
+        {
+            <div class="card" style="width: 18rem;">
+                <img src="@role.ImagePath" class="card-img-top img-fluid" style="height:200px;width:18rem">
+                <div class="card-body">
+                    <h4 class="card-title">@role.Name</h4>
+                    <p class="card-text">@role.Description</p>
+                    <a asp-controller="Roles" asp-action="GetDetailsView" asp-route-id="@role.Id" class="btn btn-primary">Go to details</a>
+                </div>
+            </div>
+        }
+    }
+</div>
+
+<div class="row" style="margin-left:auto">
+    @if (Model.Count() > 0)
+    {
+        <div class="col-10">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr><th>#</th><th><div class="text-center">@Html.DisplayNameFor(m => m.Name)</div></th><th><div class="text-center">@Html.DisplayNameFor(m => m.ImagePath)</div></th><th></th></tr>
+                </thead>
+                <tbody>
+                    @foreach (var role in Model)
+                    {
+                        <tr>
+                            <td class="text-center align-middle">@roleNumber</td>
+                            <td class="text-center align-middle">@role.Name</td>
+                            <td>
+                                <img src="@role.ImagePath" class="img-thumbnail" style="width:200px;height:200px;display:block;margin-left: auto;margin-right: auto;" />
+                            </td>
+                            <td class="text-center align-middle">
+                                <div class="d-flex justify-content-end">
+                                    <a class="btn btn-outline-success m-2" asp-controller="Roles" asp-action="GetDetailsView" asp-route-id="@role.Id"><i class="bi bi-list-task"></i> Details</a>
+                                    <a class="btn btn-outline-warning m-2" asp-controller="Roles" asp-action="GetEditView" asp-route-id="@role.Id"><i class="bi bi-pencil-square"></i> Edit</a>
+                                    <a class="btn btn-outline-danger m-2" asp-action="GetDeleteView" asp-route-id="@role.Id"><i class="bi bi-trash"></i> Delete</a>
+                                </div>
+                            </td>
+                        </tr>
+                        roleNumber++;
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+    else
+    {
+        <h1 class="alert alert-danger text-center">No Roles to Show!</h1>
+    }
+</div>

@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to LeagueWiki</h1>
+    <p>Where you can learn about league of legends champions ^_^.</p>
+    <div class="h-50 btn-group">
+        <a class="btn btn-primary" asp-controller="Champions" asp-action="GetIndexView">Go to champions</a>
+        <a class="btn btn-dark" style="margin-left:15px;margin-right:15px" asp-controller="Roles" asp-action="GetIndexView">Go to roles</a>
+        <a class="btn btn-secondary" asp-controller="Countries" asp-action="GetIndexView">Go to states</a>
+    </div>
+</div>

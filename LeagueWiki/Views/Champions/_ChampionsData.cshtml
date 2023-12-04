@@ -1,0 +1,32 @@
+﻿@model Champion
+
+<div class="row">
+    <div class="col-6" style="">
+        <dl>
+            <dt style="font-size:25px">@Html.DisplayNameFor(d => d.Name) name</dt>
+            <dd style="font-size:20px">@Model.Name</dd>
+
+            <dt style="font-size:25px">@Html.DisplayNameFor(d => d.Gender)</dt>
+            <dd style="font-size:20px">@Model.Gender</dd>
+
+            <dt style="font-size:25px">@Html.DisplayNameFor(d => d.Role.Name)</dt>
+            <dd style="font-size:20px">@Model.Role.Name <a class="btn btn-outline-primary m-1" asp-controller="Roles" asp-action="GetDetailsView" asp-route-id="@Model.RoleId">Go to role</a></dd>
+
+            <dt style="font-size:25px">@Html.DisplayNameFor(d => d.Country.Name)</dt>
+            <dd style="font-size:20px">@Model.Country.Name <a class="btn btn-outline-warning m-1" asp-controller="Countries" asp-action="GetDetailsView" asp-route-id="@Model.CountryId">Go to state</a></dd>
+
+            <dt style="font-size:25px">@Html.DisplayNameFor(d => d.Difficulty)</dt>
+            <dd style="font-size:20px">@Model.Difficulty</dd>
+
+            <dt style="font-size:25px">@Html.DisplayNameFor(d => d.AddDate)</dt>
+            <dd style="font-size:20px">@Model.AddDate.ToShortDateString()</dd>
+
+            <dt style="font-size:25px">@Html.DisplayNameFor(d => d.Description)</dt>
+            <dd style="font-size:20px">@Model.Description</dd>
+        </dl>
+     </div>
+    <img src="@Model.ImagePath" id="photo" name="photo" class="img-thumbnail col-6" style="height:400px;width:400px;margin-left:auto">
+</div>
+
+<a asp-controller="Champions" asp-action="GetIndexView">Back to Champions list</a>
+

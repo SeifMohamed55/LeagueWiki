@@ -1,0 +1,19 @@
+﻿@model Country
+
+<h1 class="alert alert-warning">Edit an existing @Html.DisplayNameFor(c => c.Name)</h1>
+
+<partial name="_CreateEditPartialView" model="@Model">
+
+   
+    
+    
+    @section Scripts{
+
+        <script>
+            function SetImgSrc() {
+                document.getElementById("photo").src = window.URL.createObjectURL(document.getElementById("imgFormFile").files[0]);
+
+            }
+        </script>
+
+    }

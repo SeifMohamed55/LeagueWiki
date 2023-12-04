@@ -1,0 +1,36 @@
+﻿@model Country
+
+<div class="row">
+    <form method="post" class="col-4" asp-controller="Countries" asp-action="@(Model==null?"AddCountry":Model.Id == 0 ? "AddCountry":"EditCountry")" enctype="multipart/form-data" onchange="SetImgSrc()">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        @if (Model != null && Model.Id != 0)
+        {
+            <input type="hidden" asp-for="Id">
+            <input type="hidden" asp-for="ImagePath">
+        }
+
+        <div>
+            <label asp-for="Name"></label>
+            <input type="text" class="form-control" asp-for="Name">
+            <span class="text-danger" asp-validation-for="Name"></span>
+        </div>
+
+        <div>
+            <label asp-for="Description"></label>
+            <input type="text" class="form-control" asp-for="Description">
+            <span class="text-danger" asp-validation-for="Description"></span>
+        </div>
+
+
+        <div>
+            <label asp-for="ImagePath"></label>
+            <input type="file" class="form-control" name="imgFormFile" id="imgFormFile" accept=".png,.jpg">
+        </div>
+
+        <button type="submit" class="btn btn-primary form-control mt-3">@(Model == null ? "Add" :Model.Id == 0 ? "Add": "EditCountry")</button>
+    </form>
+    <img src="@(Model!=null?Model.ImagePath:string.Empty)" id="photo" name="photo" class="img-thumbnail col-6" style="height:400px;width:400px;margin-left:auto">
+
+</div>
+<a asp-controller="countries" asp-action="GetIndexView">Back to list</a>
+

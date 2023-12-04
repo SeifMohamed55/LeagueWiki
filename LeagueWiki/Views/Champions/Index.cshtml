@@ -1,0 +1,61 @@
+﻿@model IEnumerable<Champion>
+
+
+<h1 class="alert alert-success text-center">Welcome to League of legends @Html.DisplayNameFor(d=> d.Name)s</h1>
+<div class="row">
+    <form method="get" class="col-4" id="searchForm">
+        <label for="searchInput">Search</label>
+    <div class="input-group">
+            <input type="text" id="searchInput" name="searchInput" class="form-control" value="">
+        <button type="submit" class="btn btn-secondary"><i class="bi bi-search"></i> Search</button>
+    </div>
+    <button type="button" id="clearButton" class="btn btn-danger mt-2">Clear</button>
+</form>
+
+</div>
+
+<div>
+    <a class="btn btn-primary mt-3 mb-3" asp-controller="Champions" asp-action="GetAddView">Add Champion</a>
+</div>
+
+<div id="contentContainer">
+    <partial name="_ShownData" model="@Model"></partial>
+</div>
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            var originalContent = $("#contentContainer").html();
+            $("#searchForm").submit(function (e) {
+                e.preventDefault(); // Prevent the default form submission behavior
+                // Store original content
+
+                // Store the original content when the page is loaded
+
+                var searchTerm = $("#searchInput").val();
+
+                $.ajax({
+                    url: "/Champions/Search", // Replace with your controller and action names
+                    type: "GET",
+                    data: { searchTerm: searchTerm },
+                    success: function (data) {
+                        $("#contentContainer").html(data);
+                    },
+                    error: function (error) {
+                        console.error("Error:", error);
+                    }
+                });
+            });
+            $("#clearButton").click(function () {
+                // Restore the original content
+                $("#contentContainer").html(originalContent);
+
+                // Clear the search input
+                $("#searchInput").val("");
+            });
+        });
+
+    </script>
+}
+
+

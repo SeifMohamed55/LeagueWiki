@@ -1,0 +1,142 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = LeagueWiki
+build_property.RootNamespace = LeagueWiki
+build_property.ProjectDir = I:\Seif\FCAI\C# project\LeagueWiki\LeagueWiki\
+build_property.EnableComHosting = 
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = I:\Seif\FCAI\C# project\LeagueWiki\LeagueWiki
+build_property._RazorSourceGeneratorDebug = 
+
+[I:/Seif/FCAI/C\# project/LeagueWiki/LeagueWiki/Views/Champions/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhbXBpb25zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/Seif/FCAI/C\# project/LeagueWiki/LeagueWiki/Views/Champions/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhbXBpb25zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/Seif/FCAI/C\# project/LeagueWiki/LeagueWiki/Views/Champions/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhbXBpb25zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/Seif/FCAI/C\# project/LeagueWiki/LeagueWiki/Views/Champions/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhbXBpb25zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/Seif/FCAI/C\# project/LeagueWiki/LeagueWiki/Views/Champions/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhbXBpb25zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/Seif/FCAI/C\# project/LeagueWiki/LeagueWiki/Views/Champions/_ChampionsData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhbXBpb25zXF9DaGFtcGlvbnNEYXRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/Seif/FCAI/C\# project/LeagueWiki/LeagueWiki/Views/Champions/_CreateEditPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhbXBpb25zXF9DcmVhdGVFZGl0UGFydGlhbFZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/Seif/FCAI/C\# project/LeagueWiki/LeagueWiki/Views/Champions/_ShownData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhbXBpb25zXF9TaG93bkRhdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/Seif/FCAI/C\# project/LeagueWiki/LeagueWiki/Views/Countries/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyaWVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/Seif/FCAI/C\# project/LeagueWiki/LeagueWiki/Views/Countries/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyaWVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/Seif/FCAI/C\# project/LeagueWiki/LeagueWiki/Views/Countries/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyaWVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/Seif/FCAI/C\# project/LeagueWiki/LeagueWiki/Views/Countries/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyaWVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/Seif/FCAI/C\# project/LeagueWiki/LeagueWiki/Views/Countries/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyaWVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/Seif/FCAI/C\# project/LeagueWiki/LeagueWiki/Views/Countries/_CountryData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyaWVzXF9Db3VudHJ5RGF0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/Seif/FCAI/C\# project/LeagueWiki/LeagueWiki/Views/Countries/_CreateEditPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyaWVzXF9DcmVhdGVFZGl0UGFydGlhbFZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/Seif/FCAI/C\# project/LeagueWiki/LeagueWiki/Views/Countries/_ShownData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyaWVzXF9TaG93bkRhdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/Seif/FCAI/C\# project/LeagueWiki/LeagueWiki/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/Seif/FCAI/C\# project/LeagueWiki/LeagueWiki/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/Seif/FCAI/C\# project/LeagueWiki/LeagueWiki/Views/Roles/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/Seif/FCAI/C\# project/LeagueWiki/LeagueWiki/Views/Roles/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/Seif/FCAI/C\# project/LeagueWiki/LeagueWiki/Views/Roles/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/Seif/FCAI/C\# project/LeagueWiki/LeagueWiki/Views/Roles/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/Seif/FCAI/C\# project/LeagueWiki/LeagueWiki/Views/Roles/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/Seif/FCAI/C\# project/LeagueWiki/LeagueWiki/Views/Roles/_CreateEditPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcX0NyZWF0ZUVkaXRQYXJ0aWFsVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/Seif/FCAI/C\# project/LeagueWiki/LeagueWiki/Views/Roles/_RolesData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcX1JvbGVzRGF0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/Seif/FCAI/C\# project/LeagueWiki/LeagueWiki/Views/Roles/_ShownData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcX1Nob3duRGF0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/Seif/FCAI/C\# project/LeagueWiki/LeagueWiki/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/Seif/FCAI/C\# project/LeagueWiki/LeagueWiki/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/Seif/FCAI/C\# project/LeagueWiki/LeagueWiki/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/Seif/FCAI/C\# project/LeagueWiki/LeagueWiki/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/Seif/FCAI/C\# project/LeagueWiki/LeagueWiki/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ibbv10qh1y

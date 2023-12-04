@@ -1,0 +1,105 @@
+﻿@model Champion
+
+<div class="row">
+    <form method="post" class="col-4" asp-controller="Champions" asp-action="@(Model==null?"AddChampion":Model.Id == 0 ? "AddChampion":"EditChampion")" enctype="multipart/form-data" onchange="SetImgSrc()">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        @if (Model != null && Model.Id != 0)
+        {
+            <input type="hidden" asp-for="Id">
+            <input type="hidden" asp-for="ImagePath">
+        }
+
+        <div>
+            <label asp-for="Name"></label>
+            <input type="text" class="form-control" asp-for="Name">
+            <span class="text-danger" asp-validation-for="Name"></span>
+        </div>
+
+
+
+        <div class="mt-2 mb-2">
+            <div class="text-white">Gender</div>
+            <span>
+                <input type="radio" asp-for="Gender" value="Male" id="male" />
+                <label for="male">Male</label>
+
+            </span>
+            <span class="m-2">
+                <input type="radio" asp-for="Gender" value="Female" id="female" />
+                <label for="female">Female</label>
+
+            </span>
+            <span>
+                <input type="radio" asp-for="Gender" value="Unspecified" id="unspecified" />
+                <label for="unspecified">Unspecified</label>
+                <br>
+            </span>
+
+            <span class="text-danger" asp-validation-for="Gender"></span>
+
+        </div>
+
+        @if (ViewBag.AllRoles.Count > 0)
+        {
+            <div>
+                <label asp-for="RoleId"></label>
+                <select asp-for="RoleId" asp-items="@(new SelectList(ViewBag.AllRoles,"Id","Name"))" class="form-control">
+                    <option selected disabled>Select...</option>
+                </select>
+                <span asp-validation-for="RoleId" class="text-danger"></span>
+
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-danger">No available Roles</div>
+        }
+
+        @if (ViewBag.AllCountries.Count > 0)
+        {
+            <div>
+                <label asp-for="CountryId"></label>
+                <select asp-for="CountryId" asp-items="@(new SelectList(ViewBag.AllCountries,"Id","Name"))" class="form-control">
+                    <option selected disabled>Select...</option>
+                </select>
+                <span asp-validation-for="CountryId" class="text-danger"></span>
+
+            </div>
+
+        }
+        else
+        {
+            <div class="alert alert-danger">No available States</div>
+        }
+
+        <div>
+            <label asp-for="Difficulty"></label>
+            <input type="number" class="form-control" asp-for="Difficulty">
+            <div class="text-muted">Note: between 1 and 5</div>
+            <span class="text-danger" asp-validation-for="Difficulty"></span>
+        </div>
+
+        <div>
+            <label asp-for="AddDate"></label>
+            <input class="form-control" asp-for="AddDate">
+            <span class="text-danger" asp-validation-for="AddDate"></span>
+        </div>
+
+        <div>
+            <label asp-for="Description"></label>
+            <input type="text" class="form-control" asp-for="Description">
+            <span class="text-danger" asp-validation-for="Description"></span>
+        </div>
+
+        <div>
+            <label asp-for="ImagePath"></label>
+            <input type="file" class="form-control" name="imgFormFile" id="imgFormFile" accept=".png,.jpg">
+        </div>
+
+        <button type="submit" class="btn btn-primary form-control mt-3">@(Model == null ? "Add" : Model.Id == 0 ? "Add" : "Edit Champion")</button>
+    </form>
+    <img src="@(Model!=null?Model.ImagePath:string.Empty)" id="photo" name="photo" class="img-thumbnail col-6" style="height:400px;width:400px;margin-left:auto">
+
+</div>
+<a asp-controller="Champions" asp-action="GetIndexView">Back to list</a>
+

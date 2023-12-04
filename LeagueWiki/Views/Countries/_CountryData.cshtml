@@ -1,0 +1,37 @@
+﻿@model Country
+
+<div class="row">
+    <div class="col-6" style="">
+        <dl>
+            <dt style="font-size:25px">@Html.DisplayNameFor(d => d.Name)</dt>
+            <dd style="font-size:20px">@Model.Name</dd>
+
+            <dt style="font-size:25px">@Html.DisplayNameFor(d => d.Description)</dt>
+            <dd style="font-size:20px">@Model.Description</dd>
+        </dl>
+
+        @if (ViewBag.Champions.Count > 0)
+        {
+            <ul class="list-group col-6">
+                <li class="list-group-item active">Champions in this @Html.DisplayNameFor(d=> d.Name)</li>
+
+                @foreach (var champion in ViewBag.Champions)
+                {
+                    <a asp-controller="Champions" asp-action="GetDetailsView" asp-route-id="@champion.Id">
+                    <li class="list-group-item list-group-item-action text-white">@champion.Name.</li>
+                    </a>
+                }
+            </ul>
+        }
+        else
+        {
+            <h1 class="alert alert-danger text-center">No Champions to Show!</h1>
+        }
+    </div>
+    <img src="@Model.ImagePath" id="photo" name="photo" class="img-thumbnail col-6" style="height:400px;width:400px;margin-left:auto">
+
+</div>
+
+
+<a asp-controller="countries" asp-action="GetIndexView">Back to list</a>
+
